@@ -1,0 +1,50 @@
+[
+    {
+        "id": 10,
+        "idcours": 1,
+        "nomclub": "Paul",
+        "numlicence": "100",
+        "typematch":"simple",
+        "duree":"90"
+    },
+    {
+        "id": 20,
+        "idcours": 2,
+        "nomclub": "Paul",
+        "numlicence": "200",
+        "typematch":"simple",
+        "duree":"90"
+    },
+    {
+        "id": 30,
+        "idcours": 3,
+        "nomclub": "Esteban",
+        "numlicence": "300",
+        "typematch":"double",
+        "duree":"90"
+    },
+    {
+        "id": 40,
+        "idcours": 4,
+        "nomclub": "Loris",
+        "numlicence": "400",
+        "typematch":"simple",
+        "duree":"90"
+    },
+    {
+        "id": 50,
+        "idcours": 5,
+        "nomclub": "Pierre",
+        "numlicence": "500",
+        "typematch":"double",
+        "duree":"90"
+    },
+    {
+        "id": 60,
+        "idcours": 6,
+        "nomclub": "Dorian",
+        "numlicence": "600",
+        "typematch":"simple",
+        "duree":"90"
+    }
+]    
