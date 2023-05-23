@@ -38,5 +38,19 @@ app.get('/reservations/:id', (req, res) => {
     res.status(200).json(reservation)
     })
 
+// Modifier uen réservation
+app.put('/reservations/:id', (req, res) => {
+    const id = parseInt(req.params.id)
+    let reservation = reservations.find(reservation => reservation.id === id)
+    reservation.name = req.body.name,
+    reservation.city = req.body.city,
+    reservation.type = req.body.type,
+    res.status(200).json(reservation)
+    })
+    
+
+// Supprimer une réservation
+
+
 // Permet de nous informer dans la console que le serveur en écoute
 app.listen(8080, () => { console.log("Serveur à l'écoute") })
