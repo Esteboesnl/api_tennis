@@ -50,7 +50,13 @@ app.put('/reservations/:id', (req, res) => {
     
 
 // Supprimer une réservation
-
+app.delete('/reservations/:id', (req, res) => {
+    const id = parseInt(req.params.id)
+    let reservation = reservations.find(reservation => reservation.id === id)
+    reservations.splice(reservations.indexOf(reservation), 1)
+    res.status(200).json(reservations)
+    })
+    
 
 // Permet de nous informer dans la console que le serveur en écoute
 app.listen(8080, () => { console.log("Serveur à l'écoute") })
