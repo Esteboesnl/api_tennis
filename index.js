@@ -3,6 +3,9 @@ const app =express()
 const cours = require('./cours.json')
 const reservations = require('./reservations.json')
 
+// Midelware
+app.use(express.json())
+
 // Affichage de tous les cours
 app.get('/cours', (req, res) => { res.status(200).json(cours) })
 
